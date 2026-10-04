@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dmanhz Social</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="toastContainer"></div>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a class="app-logo" href="#home"><span class="logo-icon">✦</span><span>Dmanhz<span class="logo-muted">Social</span></span></a>
+        <nav class="nav-menu">
+          <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>Trang chủ</span></button>
+          <button class="nav-item" data-page="search"><span class="nav-icon">⌕</span><span>Khám phá</span></button>
+          <button class="nav-item" data-page="messages"><span class="nav-icon">◌</span><span>Tin nhắn</span><b class="nav-badge hidden" id="messageBadge"></b></button>
+          <button class="nav-item" data-page="notifications"><span class="nav-icon">♢</span><span>Thông báo</span><b class="nav-badge hidden" id="notificationBadge"></b></button>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <button class="profile-mini" id="profileButton"><span class="avatar avatar-sm" id="sideAvatar"></span><span><strong id="sideName">Duy Mạnh</strong><small id="sideUsername">@dmanhz</small></span><i>⋯</i></button>
+        <button class="logout-link" id="logoutBtn">↪ <span>Đăng xuất</span></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="logo-icon">✦</span>Dmanhz Social</div>
+        <div class="topbar-search" id="globalSearchBox"><span>⌕</span><input id="globalSearch" placeholder="Tìm người dùng, bài viết..."><kbd>Ctrl K</kbd></div>
+        <div class="topbar-actions">
+          <button class="icon-button mobile-nav-trigger" id="mobileNavTrigger">☰</button>
+          <button class="icon-button notification-trigger" id="topNotificationBtn">♢<b class="dot hidden" id="topDot"></b></button>
+          <button class="top-profile" id="topProfileBtn"><span class="avatar avatar-xs" id="topAvatar"></span><span id="topName">Duy Mạnh</span><span>⌄</span></button>
+        </div>
+      </header>
+
+      <div class="page-container">
+        <section class="page" id="page-home">
+          <div class="content-grid">
+            <div class="feed-column">
+              <div class="page-heading">
+                <div><span class="eyebrow">YOUR COMMUNITY</span><h1>Bảng tin</h1><p>Những điều mới nhất từ cộng đồng của bạn.</p></div>
+                <button class="ghost-btn" id="refreshFeed">↻ Làm mới</button>
+              </div>
+              <div class="composer card">
+                <div class="composer-row"><span class="avatar avatar-md" id="composerAvatar"></span><button class="composer-input" id="openComposer">Bạn đang nghĩ gì, <b id="composerName">Duy Mạnh</b>?</button></div>
+                <div class="composer-actions"><button id="composerPhoto">▧ Ảnh</button><button id="openComposer2">✦ Tạo bài viết</button><button>☻ Cảm xúc</button></div>
+              </div>
+              <div id="feedList" class="feed-list"></div>
+            </div>
+            <aside class="right-column">
+              <div class="card profile-card">
+                <div class="profile-cover"></div><span class="avatar avatar-xl profile-card-avatar" id="profileCardAvatar"></span>
+                <div class="profile-card-body"><h3 id="profileCardName">Duy Mạnh</h3><span id="profileCardUsername">@dmanhz</span><p id="profileCardBio">Software Engineering student • Building things with code.</p>
+                <div class="profile-meta"><span>◉ <b id="statPosts">0</b> bài viết</span><span>◉ Community</span></div><button class="secondary-btn full" id="editProfileBtn">Chỉnh sửa hồ sơ</button></div>
+              </div>
+              <div class="card trend-card"><div class="card-title"><h3>Đang được quan tâm</h3><span>•••</span></div><div class="trend"><small>01 • Technology</small><b>#SoftwareEngineering</b><span>2.4K bài viết</span></div><div class="trend"><small>02 • Design</small><b>#UIDesign</b><span>1.8K bài viết</span></div><div class="trend"><small>03 • Lifestyle</small><b>#Saigon</b><span>986 bài viết</span></div></div>
+              <div class="side-footer">© 2026 Dmanhz Social · Made for community</div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="page hidden" id="page-search">
+          <div class="search-page">
+            <div class="page-heading"><div><span class="eyebrow">DISCOVER</span><h1>Khám phá</h1><p>Tìm người bạn muốn kết nối hoặc bài viết bạn quan tâm.</p></div></div>
+            <div class="search-large card"><span>⌕</span><input id="searchInput" placeholder="Tìm kiếm người dùng hoặc nội dung bài viết..."><button id="clearSearch">×</button></div>
+            <div class="search-tabs"><button class="active" data-search-tab="all">Tất cả</button><button data-search-tab="people">Người dùng</button><button data-search-tab="posts">Bài viết</button></div>
+            <div id="searchResults"></div>
+          </div>
+        </section>
+
+        <section class="page hidden" id="page-messages">
+          <div class="messages-layout card">
+            <aside class="conversation-panel">
+              <div class="conversation-head"><div><span class="eyebrow">PRIVATE SPACE</span><h2>Tin nhắn</h2></div><button class="icon-button" id="newChatBtn">＋</button></div>
+              <div class="message-search"><span>⌕</span><input id="messageSearch" placeholder="Tìm cuộc trò chuyện"></div>
+              <div id="conversationList" class="conversation-list"></div>
+            </aside>
+            <section class="chat-panel">
+              <div id="emptyChat" class="empty-state"><div class="empty-icon">◌</div><h3>Chọn một cuộc trò chuyện</h3><p>Gửi tin nhắn riêng tư đến một người trong cộng đồng.</p><button class="primary-btn" id="emptyNewChat">Bắt đầu trò chuyện</button></div>
+              <div id="activeChat" class="hidden chat-active">
+                <header class="chat-header"><div><span class="avatar avatar-md" id="chatAvatar"></span><div><h3 id="chatName">Người dùng</h3><span id="chatStatus">Đang hoạt động</span></div></div><div><button class="icon-button">☎</button><button class="icon-button">⋯</button></div></header>
+                <div class="chat-messages" id="chatMessages"></div>
+                <form class="chat-input" id="chatForm"><button type="button">＋</button><input id="chatText" autocomplete="off" placeholder="Nhập tin nhắn..."><button class="send-btn" type="submit">➤</button></form>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="page hidden" id="page-notifications">
+          <div class="notifications-page"><div class="page-heading"><div><span class="eyebrow">STAY UPDATED</span><h1>Thông báo</h1><p>Mọi tương tác quan trọng đều được tập trung tại đây.</p></div><button class="ghost-btn" id="readAllBtn">✓ Đánh dấu đã đọc</button></div><div id="notificationList" class="notification-list card"></div></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="composerModal"><div class="modal-card composer-modal"><button class="modal-close" data-close="composerModal">×</button><div class="modal-heading"><span class="avatar avatar-md" id="modalAvatar"></span><div><h2>Tạo bài viết</h2><p>Chia sẻ điều gì đó với cộng đồng.</p></div></div><textarea id="postContent" maxlength="1000" placeholder="Bạn đang nghĩ gì?"></textarea><div class="image-input"><span>▧</span><input id="postImage" placeholder="Dán URL hình ảnh (không bắt buộc)"></div><div class="modal-footer"><span id="charCount">0 / 1000</span><button class="primary-btn" id="publishPost">Đăng bài</button></div></div></div>
+
+  <div class="modal-backdrop hidden" id="profileModal"><div class="modal-card"><button class="modal-close" data-close="profileModal">×</button><div class="modal-heading"><div><span class="eyebrow">YOUR PROFILE</span><h2>Chỉnh sửa hồ sơ</h2></div></div><label class="modal-label">Họ và tên<input id="profileNameInput"></label><label class="modal-label">Giới thiệu<textarea id="profileBioInput" maxlength="180"></textarea></label><label class="modal-label">Avatar URL<input id="profileAvatarInput" placeholder="https://..."></label><button class="primary-btn full" id="saveProfile">Lưu thay đổi</button></div></div>
+
+  <div class="modal-backdrop hidden" id="userModal"><div class="modal-card user-picker"><button class="modal-close" data-close="userModal">×</button><div class="modal-heading"><span class="eyebrow">NEW CONVERSATION</span><h2>Nhắn tin cho ai?</h2></div><input class="picker-search" id="userPickerSearch" placeholder="Tìm theo tên hoặc username..."><div id="userPickerResults"></div></div></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

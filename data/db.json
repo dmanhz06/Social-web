@@ -1,0 +1,444 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "fullname": "Bùi Duy Mạnh",
+      "email": "dmanhz@gmail.com",
+      "username": "dmanhz",
+      "password": "12345",
+      "avatar": "https://inkythuatso.com/uploads/thumbnails/800/2023/01/anh-hacker-ngau-anime-1-13-12-48-53.jpg",
+      "bio": "Software Engineering student • Building things with code.",
+      "online": false
+    },
+    {
+      "id": "u2",
+      "fullname": "Nguyễn Minh Anh",
+      "email": "minhanh@gmail.com",
+      "username": "minhanh",
+      "password": "123",
+      "avatar": "",
+      "bio": "UI/UX lover • Coffee • Design.",
+      "online": true
+    },
+    {
+      "id": "u3",
+      "fullname": "Trần Quốc Huy",
+      "email": "quochuy@gmail.com",
+      "username": "quochuy",
+      "password": "123",
+      "avatar": "",
+      "bio": "Backend developer. Node.js & databases.",
+      "online": false
+    },
+    {
+      "id": "u4",
+      "fullname": "Lê Khánh Linh",
+      "email": "khanhlinh@gmail.com",
+      "username": "khanhlinh",
+      "password": "123",
+      "avatar": "",
+      "bio": "Photography and creative content.",
+      "online": true
+    },
+    {
+      "id": "u5",
+      "fullname": "Phạm Gia Bảo",
+      "email": "giabao@gmail.com",
+      "username": "giabao",
+      "password": "123",
+      "avatar": "",
+      "bio": "Android • Kotlin • Compose.",
+      "online": false
+    },
+    {
+      "id": "u_809f85fe0d5fab",
+      "fullname": "Lưu Hiếu Thiên",
+      "email": "250614@gmail.com",
+      "username": "Harry",
+      "password": "25061425",
+      "avatar": "https://symbols.vn/wp-content/uploads/2022/08/Hinh-Kilgroth-Chibi-de-thuong.jpg",
+      "bio": "Thành viên mới của cộng đồng. ngáo ngáo béo béo",
+      "online": true
+    }
+  ],
+  "posts": [
+    {
+      "id": "p1",
+      "userId": "u2",
+      "content": "Một giao diện tốt không chỉ đẹp, mà còn phải khiến người dùng biết mình cần làm gì tiếp theo. ✨",
+      "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
+      "createdAt": "2026-10-04T08:20:00.000Z",
+      "likes": [
+        "u4",
+        "u1"
+      ],
+      "comments": [
+        {
+          "id": "c1",
+          "userId": "u1",
+          "text": "Chuẩn luôn! UX trước, màu sắc sau 😄",
+          "createdAt": "2026-10-04T08:42:00.000Z"
+        },
+        {
+          "id": "c_dd31e5c8665076",
+          "userId": "u1",
+          "text": "hello",
+          "createdAt": "2026-10-04T08:22:08.133Z"
+        },
+        {
+          "id": "c_e485de579b661c",
+          "userId": "u_809f85fe0d5fab",
+          "text": "ai hỏi",
+          "createdAt": "2026-10-04T08:26:28.890Z"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "userId": "u3",
+      "content": "Hôm nay vừa hoàn thành API tìm kiếm người dùng. Cảm giác backend chạy mượt thật sự rất đã! 🚀",
+      "image": "",
+      "createdAt": "2026-10-03T15:30:00.000Z",
+      "likes": [
+        "u1",
+        "u2",
+        "u5"
+      ],
+      "comments": [
+        {
+          "id": "c2",
+          "userId": "u5",
+          "text": "Nice! Tối cho mình xem structure nhé.",
+          "createdAt": "2026-10-03T16:10:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "userId": "u4",
+      "content": "Chiều Sài Gòn và một chút nắng. Có những ngày chẳng cần đi đâu xa. 🌇",
+      "image": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+      "createdAt": "2026-10-02T10:15:00.000Z",
+      "likes": [
+        "u2",
+        "u3",
+        "u1"
+      ],
+      "comments": [
+        {
+          "id": "c_4a5f00de3921c0",
+          "userId": "u1",
+          "text": "amazing",
+          "createdAt": "2026-10-04T08:21:51.859Z"
+        },
+        {
+          "id": "c_b1fc581e769c0d",
+          "userId": "u1",
+          "text": "amazing",
+          "createdAt": "2026-10-04T08:21:56.542Z"
+        }
+      ]
+    },
+    {
+      "id": "p_09fdc59fbd933d",
+      "userId": "u1",
+      "content": "mì tôm siu béo",
+      "image": "https://inkythuatso.com/uploads/thumbnails/800/2023/01/anh-hacker-ngau-anime-1-13-12-48-53.jpg",
+      "createdAt": "2026-10-04T08:22:53.239Z",
+      "likes": [
+        "u1"
+      ],
+      "comments": [
+        {
+          "id": "c_98a746decc878a",
+          "userId": "u1",
+          "text": "mì tôm béo thật",
+          "createdAt": "2026-10-04T08:24:28.854Z"
+        },
+        {
+          "id": "c_71644aeccef21d",
+          "userId": "u_809f85fe0d5fab",
+          "text": "béo nhưng ko bằng tus",
+          "createdAt": "2026-10-04T08:26:13.196Z"
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "senderId": "u2",
+      "receiverId": "u1",
+      "text": "Mình vừa xem bài post của bạn, UI mới nhìn ổn đó!",
+      "createdAt": "2026-10-04T07:20:00.000Z",
+      "read": true
+    },
+    {
+      "id": "m2",
+      "senderId": "u1",
+      "receiverId": "u2",
+      "text": "Cảm ơn bạn nha! Mình đang hoàn thiện phần chat.",
+      "createdAt": "2026-10-04T07:23:00.000Z",
+      "read": true
+    },
+    {
+      "id": "m3",
+      "senderId": "u2",
+      "receiverId": "u1",
+      "text": "Nếu cần test thì nhắn mình nhé 👌",
+      "createdAt": "2026-10-04T07:25:00.000Z",
+      "read": true
+    },
+    {
+      "id": "m4",
+      "senderId": "u3",
+      "receiverId": "u1",
+      "text": "Mai mình bàn tiếp phần database nhé.",
+      "createdAt": "2026-10-03T13:00:00.000Z",
+      "read": true
+    },
+    {
+      "id": "m_fdd21fd5a2531b",
+      "senderId": "u1",
+      "receiverId": "u4",
+      "text": "Test chat",
+      "createdAt": "2026-10-04T07:19:49.891Z",
+      "read": false
+    },
+    {
+      "id": "m_57714f3d41c450",
+      "senderId": "u1",
+      "receiverId": "u2",
+      "text": "ok e gái",
+      "createdAt": "2026-10-04T08:19:28.808Z",
+      "read": false
+    },
+    {
+      "id": "m_b9627114977070",
+      "senderId": "u1",
+      "receiverId": "u3",
+      "text": "ok ku e",
+      "createdAt": "2026-10-04T08:19:38.196Z",
+      "read": false
+    },
+    {
+      "id": "m_93035021702c08",
+      "senderId": "u_809f85fe0d5fab",
+      "receiverId": "u1",
+      "text": "hello",
+      "createdAt": "2026-10-04T08:28:09.263Z",
+      "read": false
+    },
+    {
+      "id": "m_9013ead6bd0243",
+      "senderId": "u_809f85fe0d5fab",
+      "receiverId": "u1",
+      "text": "hallo",
+      "createdAt": "2026-10-04T08:29:03.425Z",
+      "read": false
+    },
+    {
+      "id": "m_ab53f544df4043",
+      "senderId": "u_809f85fe0d5fab",
+      "receiverId": "u3",
+      "text": "hi",
+      "createdAt": "2026-10-04T08:29:14.361Z",
+      "read": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n_02a7b0590a0b37",
+      "createdAt": "2026-10-04T08:29:14.362Z",
+      "read": false,
+      "userId": "u3",
+      "type": "message",
+      "actorId": "u_809f85fe0d5fab",
+      "text": "đã gửi cho bạn một tin nhắn."
+    },
+    {
+      "id": "n_0155af1c10160c",
+      "createdAt": "2026-10-04T08:29:03.425Z",
+      "read": false,
+      "userId": "u1",
+      "type": "message",
+      "actorId": "u_809f85fe0d5fab",
+      "text": "đã gửi cho bạn một tin nhắn."
+    },
+    {
+      "id": "n_ccdd002660a44e",
+      "createdAt": "2026-10-04T08:28:09.263Z",
+      "read": false,
+      "userId": "u1",
+      "type": "message",
+      "actorId": "u_809f85fe0d5fab",
+      "text": "đã gửi cho bạn một tin nhắn."
+    },
+    {
+      "id": "n_3ed4995b70634c",
+      "createdAt": "2026-10-04T08:26:28.890Z",
+      "read": false,
+      "userId": "u2",
+      "type": "comment",
+      "actorId": "u_809f85fe0d5fab",
+      "postId": "p1",
+      "text": "đã bình luận về bài viết của bạn."
+    },
+    {
+      "id": "n_4bf2758cad67b6",
+      "createdAt": "2026-10-04T08:26:13.196Z",
+      "read": false,
+      "userId": "u1",
+      "type": "comment",
+      "actorId": "u_809f85fe0d5fab",
+      "postId": "p_09fdc59fbd933d",
+      "text": "đã bình luận về bài viết của bạn."
+    },
+    {
+      "id": "n_fb67f4e7815b1a",
+      "createdAt": "2026-10-04T08:22:17.423Z",
+      "read": false,
+      "userId": "u4",
+      "type": "like",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã thích bài viết của bạn."
+    },
+    {
+      "id": "n_c1b567f8286779",
+      "createdAt": "2026-10-04T08:22:13.792Z",
+      "read": false,
+      "userId": "u4",
+      "type": "like",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã thích bài viết của bạn."
+    },
+    {
+      "id": "n_15c821e849d625",
+      "createdAt": "2026-10-04T08:22:08.133Z",
+      "read": false,
+      "userId": "u2",
+      "type": "comment",
+      "actorId": "u1",
+      "postId": "p1",
+      "text": "đã bình luận về bài viết của bạn."
+    },
+    {
+      "id": "n_c9fa15f2100f50",
+      "createdAt": "2026-10-04T08:21:56.542Z",
+      "read": false,
+      "userId": "u4",
+      "type": "comment",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã bình luận về bài viết của bạn."
+    },
+    {
+      "id": "n_8ed4018ba57223",
+      "createdAt": "2026-10-04T08:21:51.859Z",
+      "read": false,
+      "userId": "u4",
+      "type": "comment",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã bình luận về bài viết của bạn."
+    },
+    {
+      "id": "n_370fc4f5ad138d",
+      "createdAt": "2026-10-04T08:21:44.719Z",
+      "read": false,
+      "userId": "u4",
+      "type": "like",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã thích bài viết của bạn."
+    },
+    {
+      "id": "n_567fdb0256d03c",
+      "createdAt": "2026-10-04T08:21:42.267Z",
+      "read": false,
+      "userId": "u4",
+      "type": "like",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã thích bài viết của bạn."
+    },
+    {
+      "id": "n_270bcd99d0e7dc",
+      "createdAt": "2026-10-04T08:21:38.028Z",
+      "read": false,
+      "userId": "u4",
+      "type": "like",
+      "actorId": "u1",
+      "postId": "p3",
+      "text": "đã thích bài viết của bạn."
+    },
+    {
+      "id": "n_42ae1bedfad340",
+      "createdAt": "2026-10-04T08:19:38.196Z",
+      "read": false,
+      "userId": "u3",
+      "type": "message",
+      "actorId": "u1",
+      "text": "đã gửi cho bạn một tin nhắn."
+    },
+    {
+      "id": "n_616f3a35e722e6",
+      "createdAt": "2026-10-04T08:19:28.808Z",
+      "read": false,
+      "userId": "u2",
+      "type": "message",
+      "actorId": "u1",
+      "text": "đã gửi cho bạn một tin nhắn."
+    },
+    {
+      "id": "n_0f20ce6057fc5e",
+      "createdAt": "2026-10-04T08:19:13.374Z",
+      "read": false,
+      "userId": "u2",
+      "type": "like",
+      "actorId": "u1",
+      "postId": "p1",
+      "text": "đã thích bài viết của bạn."
+    },
+    {
+      "id": "n_4055066b8f463e",
+      "createdAt": "2026-10-04T07:19:49.891Z",
+      "read": false,
+      "userId": "u4",
+      "type": "message",
+      "actorId": "u1",
+      "text": "đã gửi cho bạn một tin nhắn."
+    },
+    {
+      "id": "n1",
+      "userId": "u1",
+      "type": "like",
+      "actorId": "u2",
+      "postId": "p1",
+      "text": "đã thích bài viết của bạn.",
+      "createdAt": "2026-10-04T08:45:00.000Z",
+      "read": true
+    },
+    {
+      "id": "n2",
+      "userId": "u1",
+      "type": "comment",
+      "actorId": "u2",
+      "postId": "p1",
+      "text": "đã bình luận về bài viết của bạn.",
+      "createdAt": "2026-10-04T08:40:00.000Z",
+      "read": true
+    },
+    {
+      "id": "n3",
+      "userId": "u1",
+      "type": "message",
+      "actorId": "u3",
+      "text": "đã gửi cho bạn một tin nhắn.",
+      "createdAt": "2026-10-03T13:00:00.000Z",
+      "read": true
+    }
+  ]
+}

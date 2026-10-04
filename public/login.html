@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dmanhz Social • Đăng nhập</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-decoration auth-decoration-one"></div>
+  <div class="auth-decoration auth-decoration-two"></div>
+  <main class="auth-shell">
+    <section class="auth-visual">
+      <div class="brand-mark"><span>✦</span> Dmanhz Social</div>
+      <div class="visual-copy">
+        <span class="eyebrow">CONNECT • CREATE • SHARE</span>
+        <h1>Một nơi để<br><span>kết nối điều bạn thích.</span></h1>
+        <p>Chia sẻ khoảnh khắc, trò chuyện với bạn bè và khám phá cộng đồng của bạn.</p>
+      </div>
+      <div class="visual-stats">
+        <div><strong>01</strong><span>Community Feed</span></div>
+        <div><strong>02</strong><span>Private Chat</span></div>
+        <div><strong>03</strong><span>Smart Notifications</span></div>
+      </div>
+    </section>
+    <section class="auth-card">
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="loginTab">Đăng nhập</button>
+        <button class="auth-tab" id="registerTab">Tạo tài khoản</button>
+      </div>
+      <div id="loginPanel">
+        <div class="auth-heading"><span class="mini-label">WELCOME BACK</span><h2>Chào mừng trở lại 👋</h2><p>Đăng nhập để tiếp tục hành trình của bạn.</p></div>
+        <form id="loginForm">
+          <label>Tên đăng nhập<input id="loginUsername" required autocomplete="username" placeholder="Ví dụ: dmanhz"></label>
+          <label>Mật khẩu<input id="loginPassword" required type="password" autocomplete="current-password" placeholder="Nhập mật khẩu"></label>
+          <div class="auth-message" id="loginMsg"></div>
+          <button class="primary-btn full" type="submit">Đăng nhập <span>→</span></button>
+        </form>
+        <div class="demo-note">Demo: <b>dmanhz</b> / <b>12345</b></div>
+      </div>
+      <div id="registerPanel" class="hidden">
+        <div class="auth-heading"><span class="mini-label">JOIN THE COMMUNITY</span><h2>Tạo tài khoản mới ✨</h2><p>Chỉ mất vài giây để bắt đầu.</p></div>
+        <form id="registerForm">
+          <label>Họ và tên<input id="regFullname" required placeholder="Bùi Duy Mạnh"></label>
+          <label>Email<input id="regEmail" required type="email" placeholder="you@example.com"></label>
+          <label>Tên đăng nhập<input id="regUsername" required placeholder="username"></label>
+          <label>Mật khẩu<input id="regPassword" required type="password" minlength="3" placeholder="Tối thiểu 3 ký tự"></label>
+          <div class="auth-message" id="registerMsg"></div>
+          <button class="primary-btn full" type="submit">Tạo tài khoản <span>→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
